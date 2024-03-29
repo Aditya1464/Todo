@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-transform: capitalize;
+}
+
+.container{
+    background-color: #050A30;
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.add{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 5px 0 10px;
+}
+
+.tasks{
+    background-color: #7EC8E3;
+    width: 25%;
+    /* padding: 20px; */
+    height: 100svh;
+    border-radius: 4px;
+
+    padding-top: 0;
+
+    position: relative;
+
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color:#377a9394 #7EC8E3 ;
+}
+
+.add input{
+    width: 350px;
+    height: 30px;
+    color: #050A30;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    background-color: #377a9394;
+    padding: 0 15px;
+}
+
+.div2{
+    margin: 10px 50px;
+    /* overflow-y: scroll; */
+}
+
+.div2 li{
+    color: #050A30;
+    font-size: 20px;
+}
+
+.addBtn{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all 5s linear 0.2s; */
+    border-radius: 5px;
+}
+
+.addBtn:hover{
+    border: 1px solid gray;
+}
+
+.addBtn:hover .fa-plus{
+    transform: scale(1.2);
+}
+
+.delete{
+    color: #050A30;
+    background-color: #55879894;
+    width: 60px;
+    height: 25px;
+    border-radius: 4px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    visibility: hidden;
+}
+
+.div1 label{
+    visibility: hidden;
+    color: black;
+}
