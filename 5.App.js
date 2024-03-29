@@ -26,6 +26,8 @@ function addtasks(){
     li.style.paddingLeft = '5px';
 
     ol.appendChild(li);
+
+    input.value = "";
 }
 
 let count = 0;
